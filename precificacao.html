@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precificação na Reforma — Produtos e Serviços</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#002039;--paper:#F6F8FB;--blue:#00467D;--blue-brand:#002039;--green:#4C81B2;--green-deep:#1F659C;--red:#002039;--lime:#CCDAED;--gold:#1F659C;
+    --line:rgba(0,32,57,.12);--mut:rgba(0,32,57,.6);--display:'Merriweather',Georgia,serif;--body:'Manrope',sans-serif;--mono:'Manrope',sans-serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--body);background:linear-gradient(180deg,#F6F8FB,#E7EEF6);color:var(--ink);min-height:100vh;padding:clamp(16px,3vw,44px);line-height:1.5;-webkit-font-smoothing:antialiased}
+  body::after{content:'';position:fixed;width:300px;height:300px;right:-40px;bottom:-40px;background:url("data:image/png;base64,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") no-repeat center/contain;opacity:.05;pointer-events:none;z-index:0}
+  .wrap{max-width:1080px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--blue);display:flex;align-items:center;gap:.6em;margin-bottom:14px}
+  .eyebrow::before{content:"";width:34px;height:2px;background:currentColor}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,4.6vw,52px);line-height:1.02;letter-spacing:-.02em}
+  h1 .hl{color:var(--blue)}
+  .sub{color:var(--mut);font-size:clamp(15px,1.8vw,19px);margin-top:12px;max-width:62ch}
+  .disc{background:rgba(0,70,125,.08);border:1px solid rgba(0,70,125,.35);border-radius:12px;padding:14px 18px;margin:22px 0 8px;font-size:13.5px;color:#002039}
+  .disc b{color:var(--gold)}
+  .toggle{display:inline-flex;background:#e0e6ee;border-radius:12px;padding:4px;gap:4px;margin-bottom:22px}
+  .toggle button{border:none;background:transparent;font-family:var(--display);font-weight:600;font-size:15px;padding:10px 22px;border-radius:9px;cursor:pointer;color:var(--mut)}
+  .toggle button.on{background:#fff;color:var(--blue);box-shadow:0 2px 8px rgba(0,32,57,.12)}
+  .grid{display:grid;grid-template-columns:360px 1fr;gap:clamp(18px,2.5vw,30px);align-items:start}
+  @media (max-width:860px){.grid{grid-template-columns:1fr}}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(18px,2.4vw,28px);box-shadow:0 1px 3px rgba(0,32,57,.04),0 12px 30px -18px rgba(0,32,57,.22)}
+  .panel h2{font-family:var(--display);font-weight:600;font-size:19px;margin-bottom:6px}
+  .panel .ph-note{font-size:12.5px;color:var(--mut);margin-bottom:18px}
+  .field{margin-bottom:20px}
+  .field label{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;font-weight:600;margin-bottom:8px}
+  .field label .v{font-family:var(--mono);font-weight:700;color:var(--blue);font-size:15px}
+  .field .hint{font-size:11.5px;color:var(--mut);font-weight:400;margin-top:5px;display:block}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:5px;border-radius:5px;background:linear-gradient(90deg,var(--blue) var(--pct,50%),#dbe2ec var(--pct,50%));outline:none}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid var(--blue);cursor:pointer;box-shadow:0 2px 6px rgba(0,32,57,.25)}
+  input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid var(--blue);cursor:pointer}
+  .money{position:relative}
+  .money span{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-family:var(--mono);color:var(--mut);font-size:15px}
+  .money input{width:100%;padding:12px 14px 12px 38px;font-family:var(--mono);font-weight:700;font-size:17px;border:1px solid var(--line);border-radius:10px;color:var(--ink);background:#fbfcfe}
+  .money input:focus{outline:2px solid var(--blue);border-color:transparent}
+  .radios{display:flex;gap:8px;margin-top:6px}
+  .radios button{flex:1;border:1px solid var(--line);background:#fbfcfe;border-radius:10px;padding:11px;font-family:var(--body);font-weight:600;font-size:13px;cursor:pointer;color:var(--mut)}
+  .radios button.on{border-color:var(--blue);color:var(--blue);background:rgba(0,70,125,.08)}
+  .results{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:520px){.results{grid-template-columns:1fr}}
+  .rcard{border-radius:16px;padding:22px;position:relative;overflow:hidden;border:1px solid var(--line);background:#fff}
+  .rcard .top{position:absolute;top:0;left:0;width:100%;height:4px}
+  .rcard.hoje .top{background:var(--gold)} .rcard.novo .top{background:var(--blue)}
+  .rcard .tag{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:6px;display:inline-block}
+  .rcard.hoje .tag{background:rgba(0,70,125,.14);color:#00467D} .rcard.novo .tag{background:rgba(0,70,125,.1);color:var(--blue)}
+  .rcard h3{font-family:var(--display);font-weight:600;font-size:18px;margin:12px 0 3px}
+  .rcard .desc{font-size:12.5px;color:var(--mut);min-height:34px}
+  .ledger{margin-top:14px;border-top:1px dashed var(--line);padding-top:6px}
+  .ledger .row{display:flex;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+  .ledger .row .nm{color:var(--mut)} .ledger .row .dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-3px)}
+  .ledger .row .amt{font-family:var(--mono);font-weight:700}
+  .ledger .row.total{border-bottom:none;font-weight:700} .ledger .row.total .nm{color:var(--ink)} .ledger .row.total .amt{font-size:20px}
+  .hoje .total .amt{color:#00467D} .novo .total .amt{color:var(--blue)}
+  .verdict{margin-top:20px;border-radius:16px;padding:22px 24px;background:var(--ink);color:#fff;position:relative;overflow:hidden}
+  .verdict::before{content:"";position:absolute;top:0;left:0;width:5px;height:100%;background:var(--lime)}
+  .verdict .vlabel{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--lime);font-weight:700}
+  .verdict .vtitle{font-family:var(--display);font-weight:600;font-size:22px;margin:8px 0 10px;line-height:1.15}
+  .verdict p{font-size:14.5px;color:rgba(255,255,255,.82);max-width:64ch}
+  details.prem{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  details.prem summary{cursor:pointer;padding:16px 20px;font-weight:600;font-size:14px;list-style:none;display:flex;justify-content:space-between}
+  details.prem summary::-webkit-details-marker{display:none}
+  details.prem .body{padding:0 20px 20px;border-top:1px solid var(--line)}
+  .formula{font-family:var(--mono);font-size:12px;background:#002039;color:#CCDAED;padding:14px 16px;border-radius:10px;margin-top:16px;line-height:1.7;overflow-x:auto}
+  .formula .c-blue{color:#A1BCDA}.formula .c-gold{color:#CCDAED}
+  footer{margin-top:28px;font-size:12.5px;color:var(--mut);border-top:1px solid var(--line);padding-top:18px}
+  footer b{color:var(--ink)}
+  .brandline{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-top:10px}
+
+  .tnav{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .tnav img{height:24px;display:block}
+  .tnav a{font-family:var(--body);font-size:12.5px;color:var(--blue);text-decoration:none;font-weight:600}
+  .tnav a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="tnav"><a href="reforma-tributaria.html"><img src="assets/logo-navy.png" alt="Priesnitz & Gnas"></a><a href="reforma-tributaria.html#ferramentas">← Ferramentas</a></div>
+  <div class="eyebrow">Ferramenta 2 · Precificação</div>
+  <h1>Remarcar preço quando o <span class="hl">imposto vai por fora</span></h1>
+  <p class="sub">Hoje o imposto está embutido no preço. Depois da reforma, ele aparece destacado na nota — e isso muda como você calcula o valor de venda para manter margem sem espantar o cliente.</p>
+
+  <div class="disc"><b>Simulação didática — não é cálculo tributário oficial.</b> Modela o cenário de imposto “por fora” (regime regular). Ajuste as premissas ao seu anexo/atividade e valide com seu contador.</div>
+
+  <div class="toggle"><button id="tb-prod" class="on">Produto</button><button id="tb-serv">Serviço</button></div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2 id="ph-title">Seu produto</h2>
+      <div class="ph-note">Ajuste os controles — recalcula sozinho.</div>
+      <div class="field"><label>Preço de venda atual <span class="v" id="v-preco">R$ 100</span></label>
+        <div class="money"><span>R$</span><input type="text" id="preco" inputmode="numeric" value="100"></div>
+        <span class="hint">O valor que você cobra hoje, com o imposto já embutido.</span></div>
+      <div class="field"><label>Alíquota efetiva do Simples hoje <span class="v" id="v-simples">8,0%</span></label>
+        <input type="range" id="simples" min="4" max="19" step="0.5" value="8">
+        <span class="hint">Imposto embutido no preço atual (“por dentro”).</span></div>
+      <div class="field"><label>Insumos que geram crédito <span class="v" id="v-cred">40%</span></label>
+        <input type="range" id="cred" min="0" max="90" step="5" value="40">
+        <span class="hint">% do preço gasto com compras que darão crédito de IBS/CBS.</span></div>
+      <div class="field"><label>Alíquota de referência IBS+CBS <span class="v" id="v-ref">26,5%</span></label>
+        <input type="range" id="ref" min="18" max="30" step="0.5" value="26.5"></div>
+      <div class="field"><label style="margin-bottom:8px">Seu objetivo ao remarcar</label>
+        <div class="radios"><button id="obj-marg" class="on">Manter minha margem</button><button id="obj-preco">Manter o preço ao cliente</button></div></div>
+    </div>
+
+    <div>
+      <div class="results">
+        <div class="rcard hoje"><div class="top"></div><span class="tag">Hoje</span>
+          <h3>Imposto por dentro</h3><div class="desc">O cliente vê um preço só; o imposto está escondido dentro dele.</div>
+          <div class="ledger">
+            <div class="row"><span class="nm">Preço ao cliente</span><span class="dots"></span><span class="amt" id="h-preco">—</span></div>
+            <div class="row"><span class="nm">Imposto embutido</span><span class="dots"></span><span class="amt" id="h-imp">—</span></div>
+            <div class="row total"><span class="nm">Sua receita líquida</span><span class="dots"></span><span class="amt" id="h-liq">—</span></div>
+          </div></div>
+        <div class="rcard novo"><div class="top"></div><span class="tag">Pós-reforma</span>
+          <h3>Imposto por fora</h3><div class="desc">O imposto aparece destacado, somado sobre a sua base.</div>
+          <div class="ledger">
+            <div class="row"><span class="nm">Sua base (sem imposto)</span><span class="dots"></span><span class="amt" id="n-base">—</span></div>
+            <div class="row"><span class="nm">IBS/CBS destacado</span><span class="dots"></span><span class="amt" id="n-imp">—</span></div>
+            <div class="row total"><span class="nm">Preço ao cliente</span><span class="dots"></span><span class="amt" id="n-preco">—</span></div>
+          </div></div>
+      </div>
+      <div class="verdict"><div class="vlabel">Leitura</div><div class="vtitle" id="v-title">—</div><p id="v-text">—</p></div>
+      <details class="prem"><summary>Premissas e fórmulas ▾</summary><div class="body">
+        <p style="font-size:13px;color:var(--mut);margin-top:14px">Modelo de IVA: no regime regular, o imposto é neutro para a empresa (repasse). A sua margem = base sem imposto. Créditos de insumos aliviam o custo efetivo quando o cliente é consumidor final.</p>
+        <div class="formula">
+          <span class="c-gold"># Hoje</span><br>líquido = preço × (1 − alíq_simples)<br><br>
+          <span class="c-blue"># Pós-reforma (por fora)</span><br>
+          <span style="opacity:.7">— objetivo “manter margem”:</span><br>base = líquido_hoje  ·  preço_cliente = base × (1 + <span class="c-blue">alíq_ref</span>)<br>
+          <span style="opacity:.7">— objetivo “manter preço”:</span><br>preço_cliente = preço_hoje  ·  base = preço ÷ (1 + <span class="c-blue">alíq_ref</span>)
+        </div>
+      </div></details>
+    </div>
+  </div>
+
+  <footer>
+  <p style="margin:0 0 10px"><a href="reforma-tributaria.html#ferramentas" style="color:var(--blue);font-weight:600;text-decoration:none;font-size:12.5px">← Voltar para as ferramentas</a></p>
+  <b>Regra de bolso:</b> serviços (poucos insumos creditáveis, ISS baixo hoje) tendem a <b>encarecer</b> para o consumidor final; comércio e indústria, com crédito amplo, tendem a ter <b>alívio</b>. Se o seu cliente é empresa (B2B), ele recupera o imposto destacado como crédito — então o preço “por fora” não o assusta.
+  <div class="brandline">Reforma Tributária · MP Empresas · ACIMA + Sebrae · Guilherme Priesnitz</div></footer>
+</div>
+<script>
+(function(){
+  var brl=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});
+  var pct=function(n){return n.toLocaleString('pt-BR',{maximumFractionDigits:1})+'%'};
+  var $=function(id){return document.getElementById(id)};
+  var tipo='prod', objetivo='marg';
+  var precoEl=$('preco');
+  function parseP(){var n=parseFloat(precoEl.value.replace(/\./g,'').replace(',','.').replace(/[^\d.]/g,''));return isNaN(n)?0:n}
+  function setTrack(id){var el=$(id),mn=+el.min,mx=+el.max,v=+el.value;el.style.setProperty('--pct',((v-mn)/(mx-mn)*100)+'%')}
+  ['simples','cred','ref'].forEach(function(id){setTrack(id);$(id).addEventListener('input',function(){setTrack(id);calc()})});
+  precoEl.addEventListener('input',calc);
+
+  $('tb-prod').onclick=function(){tipo='prod';this.classList.add('on');$('tb-serv').classList.remove('on');$('ph-title').textContent='Seu produto';$('cred').value=40;setTrack('cred');calc()};
+  $('tb-serv').onclick=function(){tipo='serv';this.classList.add('on');$('tb-prod').classList.remove('on');$('ph-title').textContent='Seu serviço';$('cred').value=10;setTrack('cred');calc()};
+  $('obj-marg').onclick=function(){objetivo='marg';this.classList.add('on');$('obj-preco').classList.remove('on');calc()};
+  $('obj-preco').onclick=function(){objetivo='preco';this.classList.add('on');$('obj-marg').classList.remove('on');calc()};
+
+  function calc(){
+    var preco=parseP(), s=(+$('simples').value)/100, c=(+$('cred').value)/100, ref=(+$('ref').value)/100;
+    $('v-preco').textContent=brl.format(preco);$('v-simples').textContent=pct(+$('simples').value);$('v-cred').textContent=Math.round(+$('cred').value)+'%';$('v-ref').textContent=pct(+$('ref').value);
+    var impHoje=preco*s, liqHoje=preco-impHoje;
+    var base,precoNovo,impNovo;
+    if(objetivo==='marg'){ base=liqHoje; impNovo=base*ref; precoNovo=base+impNovo; }
+    else { precoNovo=preco; base=preco/(1+ref); impNovo=precoNovo-base; }
+    $('h-preco').textContent=brl.format(preco);$('h-imp').textContent=brl.format(impHoje);$('h-liq').textContent=brl.format(liqHoje);
+    $('n-base').textContent=brl.format(base);$('n-imp').textContent=brl.format(impNovo);$('n-preco').textContent=brl.format(precoNovo);
+    var title,text;
+    var custoEfetivo=ref*(1-c); // carga líquida ao consumidor final considerando créditos
+    if(objetivo==='marg'){
+      var dif=precoNovo-preco, difp=preco>0?(dif/preco*100):0;
+      title = dif>0.005 ? 'Para manter margem, o preço sobe '+pct(difp) : (dif<-0.005?'Dá para baixar o preço em '+pct(-difp)+' mantendo a margem':'Preço praticamente igual');
+      text = (tipo==='serv'
+        ? 'Serviços têm poucos insumos creditáveis, então a base tributável é quase todo o preço — a tendência é o valor final ao consumidor subir. Se seu cliente é empresa, ele credita o imposto e o impacto some.'
+        : 'Com crédito amplo nos insumos ('+Math.round(c*100)+'%), boa parte do imposto é recuperada na cadeia. Para o consumidor final, a carga efetiva fica em torno de '+pct(custoEfetivo*100)+'.');
+    } else {
+      var difMarg=base-liqHoje, difMp=liqHoje>0?(difMarg/liqHoje*100):0;
+      title = difMarg<-0.005 ? 'Mantendo o preço, sua margem cai '+pct(-difMp) : (difMarg>0.005?'Mantendo o preço, sua margem sobe '+pct(difMp):'Margem praticamente igual');
+      text = 'Segurar o preço ao cliente joga a diferença para a sua margem. '+(tipo==='serv'?'Em serviços isso costuma doer mais.':'Em produtos, o crédito de insumos ameniza.')+' Avalie repassar parte ao preço.';
+    }
+    $('v-title').textContent=title;$('v-text').textContent=text;
+  }
+  calc();
+})();
+</script>
+</body>
+</html>
